@@ -16,7 +16,7 @@ var onSiteCSS = [
   '//cdn.jsdelivr.net/jquery.slick/1.5.8/slick.css',
   '//cdn.jsdelivr.net/jquery.slick/1.5.8/slick-theme.css',
   '//cdn.jsdelivr.net/fontawesome/4.4.0/css/font-awesome.min.css',
-  '//cdn.rawgit.com/tropicloud/chaordic-frontline/master/chaordic/frontline.css'
+  '//cdn.rawgit.com/tropicloud/chaordic-frontline/master/chaordic/onsite.css'
 ];
 
 // Chaordic CSS
