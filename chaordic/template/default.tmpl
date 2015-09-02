@@ -1,0 +1,69 @@
+<!-- Container Template -->
+<script id="container-template" type="x-tmpl-mustache">
+  <div class="chaordic-onsite pure-g">
+    <div class="chaordic-ref pure-u-1 pure-u-sm-1-3 pure-u-md-1-4 pure-u-lg-1-5"></div>
+    <div class="chaordic-rec pure-u-1 pure-u-sm-2-3 pure-u-md-3-4 pure-u-lg-4-5"></div>
+  </div>
+  <script id="chaordic-config" type="text/javascript">
+    var onsiteConfig = {
+      truncation: {
+        width: 260,
+        multiline: false
+      },
+      carousel: {
+        speed: 600,
+        dots: true,
+        arrows: false,
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        responsive: [
+          { breakpoint: 1024, settings: { slidesToShow: 3, slidesToScroll: 3 }},
+          { breakpoint:  700, settings: { slidesToShow: 2, slidesToScroll: 2 }},
+          { breakpoint:  480, settings: { slidesToShow: 1, slidesToScroll: 1 }}
+        ]
+      }
+    };
+  </script>
+</script>
+
+<!-- Reference Template -->
+<script id="reference-template" type="x-tmpl-mustache">
+{{#reference.item}}
+  <div class="chaordic-item">
+    <input type="hidden" name="businessId" value="{{businessId}}">
+    <span class="label"><i class="pixel"></i><i class="fa fa-check"></i> &nbsp; Visitado</span>
+    <a href="{{detailUrl}}"><img src="{{imageName}}" alt="{{name}}" /></a>
+    <p class="name">{{name}}</p>
+    {{#oldPrice}}
+      <p class="oldPrice"><span>{{oldPrice}}</span></p>
+    {{/oldPrice}}
+    {{^oldPrice}}
+      <p class="oldPrice">&nbsp;</p>
+    {{/oldPrice}}
+    <p class="price"><i class="fa fa-credit-card"></i> <span>{{price}}</span></p>
+    <p class="payment">{{{productInfo.paymentConditions}}}</p>
+    <a class="pure-button" href="{{detailUrl}}">Comprar <i class="fa fa-shopping-cart fa-lg"></i></a>
+  </div>
+{{/reference.item}}
+</script>
+
+<!-- Receommended Template -->
+<script id="recommend-template" type="x-tmpl-mustache">
+{{#recommendation}}
+  <div class="chaordic-item">
+    <input type="hidden" name="businessId" value="{{businessId}}">
+    <a href="{{detailUrl}}"><img src="{{imageName}}" alt="{{name}}" /></a>
+    <p class="name">{{name}}</p>
+    {{#oldPrice}}
+      <p class="oldPrice"><span>{{oldPrice}}</span></p>
+    {{/oldPrice}}
+    {{^oldPrice}}
+      <p class="oldPrice">&nbsp;</p>
+    {{/oldPrice}}
+    <p class="price"><i class="fa fa-credit-card"></i> <span>{{price}}</span></p>
+    <p class="payment">{{{productInfo.paymentConditions}}}</p>
+    <a class="pure-button" href="{{detailUrl}}">Comprar <i class="fa fa-shopping-cart fa-lg"></i></a>
+  </div>
+{{/recommendation}}
+</script>

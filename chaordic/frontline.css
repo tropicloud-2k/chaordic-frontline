@@ -1,0 +1,136 @@
+/*
+ * Author: Guilherme Jaccoud <admin@tropicloud.net>
+ * Author URI: http://tapioca.ws
+ * Description: Chaordic Frontline
+ * Version: 0.4.7
+ */
+
+/*
+ * -- CHAORDIC BASE --
+ */
+.chaordic-onsite {
+  width: 100%;
+  padding: 2em 0;
+}
+.chaordic-onsite *:focus {
+  outline: 0;
+}
+
+/*
+ * -- CHAORDIC STYLE --
+ */
+.chaordic-item {
+  margin: 5px;
+  padding: 1.2em;
+  box-shadow: 0;
+  display: block;
+  text-align: center;
+  background-color: white;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-transition: box-shadow .7s;
+  -moz-transition: box-shadow .7s;
+  transition: box-shadow .7s;
+}
+.chaordic-item p,
+.chaordic-item a,
+.chaordic-item .label,
+.chaordic-item .name,
+.chaordic-item .oldPrice,
+.chaordic-item .price,
+.chaordic-item .payment,
+.chaordic-item .pure-button {
+  font-size: .75em;
+  font-weight: normal;
+  line-height: 1.3em;
+}
+
+.chaordic-item:hover,
+.chaordic-ref .chaordic-item {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/*
+ * -- CHAORDIC BUTTON --
+ */
+.chaordic-item .pure-button {
+  opacity: 0;
+  color: white;
+  width: 100%;
+  margin-top: .6em;
+  padding: .5em 2em;
+  background-color: #AA1423;
+  -webkit-transition: opacity .7s;
+  -moz-transition: opacity .7s;
+  transition: opacity .7s;
+}
+.chaordic-item:hover .pure-button {
+  opacity: 1;
+}
+
+/*
+ * -- CHAORDIC ITEM --
+ */
+.chaordic-item img {
+   display: inline-block;
+   max-width: 100% !important;
+   height: auto;
+   -webkit-transition: margin .3s;
+   -moz-transition: margin .3s;
+   transition: margin .3s;
+ }
+ .chaordic-item p {
+   margin: .2em 0 !important;
+ }
+ .chaordic-item .name {
+  font-weight: bold;
+  color: #2A2C35;
+  padding: .6em 0;
+}
+.chaordic-item .price span {
+  font-size: 120%;
+  color: #AA1423;
+}
+.chaordic-item .oldPrice span {
+  text-decoration: line-through;
+  opacity: .5;
+}
+.chaordic-item:hover img {
+  margin: .3em 0 -.3em 0;
+}
+.chaordic-rec .slick-dots li {
+  margin: 0 !important;
+}
+.chaordic-ref .label {
+  position: absolute;
+  top: 2em;
+  left: 0;
+  color: white;
+  text-align: left;
+  padding: 0.5em 1em;
+  background-color: rgba(170, 20, 35, 0.9);
+}
+.chaordic-ref .label .pixel {
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  display: block;
+  width: 5px;
+  height: 5px;
+  background: #AA1423 url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHdpZHRoPSIxMHB4IiBoZWlnaHQ9IjEwcHgiIHZpZXdCb3g9IjAgMCAxMCAxMCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTAgMTAiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxwb2x5Z29uIGZpbGw9IiNGRkZGRkYiIHBvaW50cz0iMTAsMTAgMCwxMCAwLDAgIi8+PC9zdmc+) no-repeat left top;
+}
+
+/*
+ * -- MOBILE MEDIA QUERIES --
+ */
+@media (max-width: 35em) {
+  /* Hide Chaordic chaordic reference */
+  .chaordic-ref {
+      display: none;
+  }
+  /* Shrink menu-item padding */
+  .pure-menu-link {
+    padding: .5em;
+  }
+}

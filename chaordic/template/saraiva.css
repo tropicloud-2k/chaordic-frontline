@@ -1,0 +1,79 @@
+#saraiva .chaordic-item {
+  margin: 5px;
+  padding: 0;
+  box-shadow: 0;
+  display: block;
+  text-align: center;
+  background-color: white;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-transition: box-shadow .7s;
+  -moz-transition: box-shadow .7s;
+  transition: box-shadow .7s;
+}
+#saraiva .chaordic-item:hover,
+#saraiva .chaordic-ref .chaordic-item {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+#saraiva .item-img {
+  display: block;
+  width: 100%;
+  background-size: 100% !important;
+  -webkit-transition: background-position .7s;
+  -moz-transition: background-position .7s;
+  transition: background-position .7s;
+}
+#saraiva .item-img:hover {
+  background-position: 0 -4em !important;
+}
+
+#saraiva .item-img span {
+  display: block;
+  padding-top: 100%
+}
+
+#saraiva .chaordic-item:hover img {
+   margin: -.3em 0 .3em 0;
+ }
+
+#saraiva .label {
+  position: absolute;
+  top: 3em;
+  left: 0;
+  color: white;
+  text-align: left;
+  padding: 0.5em 1em;
+  background-color: #2A2C35;
+}
+
+#saraiva .label .pixel {
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  display: block;
+  width: 5px;
+  height: 5px;
+  background: #2A2C35 url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHdpZHRoPSIxMHB4IiBoZWlnaHQ9IjEwcHgiIHZpZXdCb3g9IjAgMCAxMCAxMCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTAgMTAiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxwb2x5Z29uIGZpbGw9IiNGREQ5MDAiIHBvaW50cz0iMTAsMTAgMCwxMCAwLDAgIi8+PC9zdmc+) no-repeat left top;
+}
+
+#saraiva .item-info {
+  padding: 1em;
+}
+
+#saraiva .name {
+ font-weight: bold;
+ color: #2A2C35;
+ padding: .6em 0;
+}
+
+#saraiva .price span {
+  font-size: 120%;
+  color: #FDD900;
+}
+
+#saraiva .pure-button {
+  padding: .5em 0;
+  background-color: #FDD900;
+}

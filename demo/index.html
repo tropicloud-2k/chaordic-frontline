@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Touch enabled jQuery plugin that lets you create beautiful responsive Chaordic OnSite widgets.">
+    <meta name="author" content="Guilherme Jaccoud <guigo@tapioca.ws>">
+
+    <title>Chaordic Frontline</title>
+
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/pure/0.6.0/pure-min.css">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+
+    <!-- Header -->
+    <div class="header">
+      <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
+        <a class="pure-menu-heading chaordic-logo" href="#"> &nbsp; </a>
+        <ul class="pure-menu-list">
+          <li class="pure-menu-item"><a href="#" class="pure-menu-link"><i class="fa fa-github fa-lg"></i> &nbsp; GitHub</a></li>
+          <li class="pure-menu-item"><a href="#" class="pure-menu-link"><i class="fa fa-download fa-lg"></i> &nbsp; Download</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Splash -->
+    <div class="splash-container">
+      <div class="splash pure-g">
+        <div class="pure-u-1 pure-u-md-2-3">
+          <h1 class="splash-head"><i class="fa fa-tv"></i> FrontLine</h1>
+          <p class="splash-subhead">Touch enabled jQuery plugin that lets you create beautiful responsive Chaordic OnSite widgets.</p>
+          <p>
+            <a href="#" class="pure-button pure-button-primary"><i class="fa fa-download fa-lg"></i> &nbsp; Download</a></a>
+            <a href="#" class="pure-button pure-button-alt"><i class="fa fa-github fa-lg"></i> &nbsp; GitHub</a></a>
+          </p>
+        </div>
+        <div class="onsite-img is-center pure-u-1 pure-u-md-1-3">
+        </div>
+      </div>
+    </div>
+
+    <!-- Chaordic OnSite -->
+    <div class="chaordic-wrapper">
+      <h2 class="content-head is-center">Example</h2>
+      <div id="pontofrio" class="chaordic-container" template="/chaordic/template/default.tmpl" endpoint="//chaordic-data.cloudapp.ml/pontofrio/challenge.json?callback=?"></div>
+    </div>
+
+    <!-- Features -->
+    <div class="content-wrapper">
+      <div class="content">
+        <div class="pure-g">
+          <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+            <h3 class="content-subhead">
+              <i class="fa fa-hand-pointer-o fa-lg"></i>
+              Touch and Drag
+            </h3>
+            <p>
+              Designed specially to boost mobile browsing experience. Mouse drag works great on desktop too!
+            </p>
+          </div>
+          <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+            <h3 class="content-subhead">
+              <i class="fa fa-tablet fa-lg"></i>
+              Ultra Responsive
+            </h3>
+            <p>
+              Scales with its container and includes a very intuitive breakpoints settings.
+            </p>
+          </div>
+          <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+            <h3 class="content-subhead">
+              <i class="fa fa-file-text-o fa-lg"></i>
+              Mustache Templating
+            </h3>
+            <p>
+              Mustache is a logic-less template syntax. It can be used for HTML or anything.
+            </p>
+          </div>
+          <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+            <h3 class="content-subhead">
+              <i class="fa fa-html5 fa-lg"></i>
+              Pure CSS
+            </h3>
+            <p>
+              Layout and styling for native HTML elements, plus the most common UI components.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Chaordic Centauro -->
+    <div class="chaordic-wrapper">
+      <h2 class="content-head is-center">Centauro</h2>
+      <div id="centauro" class="chaordic-container" template="/chaordic/template/centauro.tmpl" endpoint="//chaordic-data.cloudapp.ml/centauro/challenge.json?callback=?"></div>
+    </div>
+
+    <!-- Chaordic Saraiva -->
+    <div class="chaordic-wrapper saraiva">
+      <h2 class="content-head is-center">Saraiva</h2>
+      <div id="saraiva" class="chaordic-container" template="/chaordic/template/saraiva.tmpl" endpoint="//chaordic-data.cloudapp.ml/saraiva/challenge.json?callback=?"></div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer l-box is-center">
+        Made with <i class="fa fa-heart"></i> in Floripa <br />
+        <a class="tapioca" href="//tapioca.ws" target="_blank"></a>
+    </div>
+
+    <!-- Chaordic Scripts -->
+    <script src="//cdn.jsdelivr.net/jquery/2.1.4/jquery.min.js"></script>
+    <script src="/chaordic/frontline.js"></script>
+
+  </body>
+</html>
