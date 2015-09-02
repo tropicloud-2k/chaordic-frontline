@@ -1,0 +1,19 @@
+machine:
+  services:
+    - docker
+
+dependencies:
+  override:
+    - docker info
+    - docker build -t tropicloud/chaordic-frontline .
+
+test:
+  override:
+    - docker run -d -p 80:80 tropicloud/chaordic-frontline; sleep 10
+    - curl --retry 10 --retry-delay 5 -v http://localhost/
+
+deployment:
+  dockerhub:
+    branch: master
+    commands:
+      - $TRIGGER_URL

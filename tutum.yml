@@ -1,0 +1,4 @@
+app:
+  image: tropicloud/chaordic-frontline
+  ports:
+    - "80:80"
