@@ -185,11 +185,12 @@
 
 /*
  * -- MOBILE MEDIA QUERIES --
- * Hide Chaordic OnSite reference
+ * -- Hide labels and reference --
  */
 
 @media (max-width: 35em) {
-  .chaordic-ref {
+  .chaordic-ref,
+  .chaordic-label {
       display: none;
   }
 }
