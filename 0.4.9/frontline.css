@@ -1,0 +1,195 @@
+/*
+ * Author: Guilherme Jaccoud <admin@tropicloud.net>
+ * Author URI: http://tapioca.ws
+ * Description: Chaordic Frontline
+ * Version: 0.4.9
+ */
+
+@import url('//cdn.jsdelivr.net/pure/0.6.0/pure-min.css');
+@import url('//cdn.jsdelivr.net/pure/0.6.0/grids-responsive-min.css');
+@import url('//cdn.jsdelivr.net/jquery.slick/1.5.8/slick.css');
+@import url('//cdn.jsdelivr.net/jquery.slick/1.5.8/slick-theme.css');
+@import url('//cdn.jsdelivr.net/fontawesome/4.4.0/css/font-awesome.min.css');
+
+/*
+ * -- CHAORDIC BASE --
+ */
+
+.chaordic-onsite {
+  width: 100%;
+  padding: 2em 0;
+  color: #A1AAB8;
+  font-size: .75em;
+  font-weight: normal;
+  line-height: 1.3em;
+}
+
+.chaordic-onsite *:focus {
+  outline: 0;
+}
+
+.chaordic-onsite .slick-dots li {
+  margin: 0 !important;
+}
+
+/*
+ * -- CHAORDIC ITEM --
+ */
+
+ .chaordic-item {
+  padding: 0;
+  margin: 5px;
+  text-align: center;
+  background-color: white;
+  /* box-shadow */
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0);
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0);
+  /* transition */
+  -webkit-transition: box-shadow .7s;
+  -moz-transition: box-shadow .7s;
+  transition: box-shadow .7s;
+}
+.chaordic-item:hover,
+.chaordic-ref .chaordic-item {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+
+.chaordic-item .item-image {
+  width: 100%;
+  display: block;
+}
+
+/*
+ * -- ITEM IMAGE --
+ */
+
+.chaordic-item img {
+  max-width: 100% !important;
+  display: inline-block;
+  height: auto;
+  padding: 1em;
+}
+
+/*
+ * -- ITEM INFO --
+ */
+
+.chaordic-item .item-info {
+  padding: 1em;
+  padding-top: 0;
+}
+
+.chaordic-item .name {
+  color: #3B414A;
+  font-weight: bold;
+}
+
+.chaordic-item .oldPrice {
+  color: #C0C6CF;
+  margin: 0 !important;
+}
+.chaordic-item .oldPrice span{
+  text-decoration: line-through;
+}
+
+.chaordic-item .price {
+  color: #F05923;
+  font-size: 120%;
+  margin-top: .25em;
+}
+
+.chaordic-item .payment {
+  color: #C0C6CF;
+  opacity: 1;
+  line-height: 30px;
+  margin-bottom: 0;
+}
+.chaordic-item:hover .payment {
+  opacity: 0;
+}
+
+/*
+ * -- ITEM BUTTON --
+ */
+
+.chaordic-item .pure-button {
+  position: relative;
+  z-index: 20;
+  float: left;
+  margin-top: -30px;
+  bottom: 0;
+  opacity: 0;
+  color: white;
+  width: 100%;
+  padding: 0;
+  line-height: 30px;
+  background-color: #637288;
+  -webkit-transition: opacity .7s;
+  -moz-transition: opacity .7s;
+  transition: opacity .7s;
+}
+.chaordic-item:hover .pure-button {
+  opacity: 1;
+}
+
+/*
+ * -- CHAORDIC LABELS --
+ */
+
+.chaordic-onsite .label {
+  display: inline-block;
+  position: relative;
+  z-index: 10;
+  float: left;
+  color: white;
+  font-style: italic;
+  line-height: 30px;
+  padding: 0 1em;
+  margin-top: 2em;
+  margin-bottom: -50px;
+  background-position: right;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHdpZHRoPSIzMDBweCIgaGVpZ2h0PSIzMHB4IiB2aWV3Qm94PSIwIDAgMzAwIDMwIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAzMDAgMzAiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxwb2x5Z29uIG9wYWNpdHk9IjAuOSIgZmlsbD0iIzY0NzM4OSIgcG9pbnRzPSIwLDAgMzAwLDAgMjk1LDUgMzAwLDEwIDI5NSwxNSAzMDAsMjAgMjk1LDI1IDMwMCwzMCAwLDMwICIvPjwvc3ZnPg==');
+}
+.chaordic-onsite .label .pixel {
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 5px;
+  height: 5px;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHdpZHRoPSI1cHgiIGhlaWdodD0iNXB4IiB2aWV3Qm94PSIwIDAgNSA1IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA1IDUiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxwb2x5Z29uIG9wYWNpdHk9IjAuOSIgZmlsbD0iIzRCNTY2NyIgcG9pbnRzPSI1LDUgMCwwIDUsMCAiLz48L3N2Zz4=');
+}
+
+.chaordic-item .discount {
+  display: inline-block;
+  position: relative;
+  float: right;
+  clear: both;
+  right: -5px;
+  color: white;
+  padding: 0 1em;
+  line-height: 30px;
+  font-style: italic;
+  margin-top: -4em;
+  background-position: left;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHdpZHRoPSIzMDBweCIgaGVpZ2h0PSIzMHB4IiB2aWV3Qm94PSIwIDAgMzAwIDMwIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAzMDAgMzAiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxwb2x5Z29uIG9wYWNpdHk9IjAuOSIgZmlsbD0iI0YxNUEyNCIgcG9pbnRzPSIzMDAsMzAgMCwzMCA1LDI1IDAsMjAgNSwxNSAwLDEwIDUsNSAwLDAgMzAwLDAgIi8+PC9zdmc+');
+}
+.chaordic-item .discount .pixel {
+  position: absolute;
+  right: 0;
+  bottom: -5px;
+  width: 5px;
+  height: 5px;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHdpZHRoPSI1cHgiIGhlaWdodD0iNXB4IiB2aWV3Qm94PSIwIDAgNSA1IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA1IDUiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxwb2x5Z29uIG9wYWNpdHk9IjAuOSIgZmlsbD0iI0I1NDQxQiIgcG9pbnRzPSIwLDUgNSwwIDAsMCAiLz48L3N2Zz4=');
+}
+
+/*
+ * -- MOBILE MEDIA QUERIES --
+ * Hide Chaordic OnSite reference
+ */
+
+@media (max-width: 35em) {
+  .chaordic-ref {
+      display: none;
+  }
+}

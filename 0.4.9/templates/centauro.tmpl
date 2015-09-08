@@ -1,0 +1,101 @@
+<!-- Container Template -->
+<script id="onsite-container" type="x-tmpl-mustache">
+  <div class="chaordic-onsite pure-g">
+    <div class="pure-u-1 pure-u-sm-1-3 pure-u-md-1-4 pure-u-lg-1-5"><span class="label"><i class="pixel"></i>Você já visitou &nbsp; <i class="fa fa-check"></i></span></div>
+    <div class="pure-u-1 pure-u-1 pure-u-sm-2-3 pure-u-md-3-4 pure-u-lg-4-5"></div>
+    <div class="chaordic-ref pure-u-1 pure-u-sm-1-3 pure-u-md-1-4 pure-u-lg-1-5"></div>
+    <div class="chaordic-rec pure-u-1 pure-u-sm-2-3 pure-u-md-3-4 pure-u-lg-4-5"></div>
+  </div>
+
+  <!-- Widget Options -->
+  <link rel="stylesheet" href="//cdn.rawgit.com/tropicloud/chaordic-frontline/master/0.4.9/templates/centauro.css" charset="utf-8">
+  <script id="chaordic-options" type="text/javascript">
+    var onsiteOpt = {
+      truncation: {
+        width: "auto",
+        multiline: true
+      },
+      carousel: {
+        speed: 400,
+        dots: true,
+        arrows: false,
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        responsive: [
+          { breakpoint: 1024, settings: { slidesToShow: 3, slidesToScroll: 3 }},
+          { breakpoint:  700, settings: { slidesToShow: 2, slidesToScroll: 2 }},
+          { breakpoint:  480, settings: { slidesToShow: 1, slidesToScroll: 1 }}
+        ]
+      }
+    };
+  </script>
+</script>
+
+<!-- Reference Template -->
+<script id="onsite-reference" type="x-tmpl-mustache">
+  {{#reference.item}}
+    <div class="chaordic-item">
+
+      <!-- Item Image -->
+      <div class="item-image">
+        <a href="{{detailUrl}}"><img src="{{imageName}}" alt="{{name}}" /></a>
+      </div>
+
+      <!-- Item Discount -->
+      {{#discount}}
+        <span class="discount"><i class="pixel"></i>{{discount}}</span>
+      {{/discount}}
+
+      <!-- Item Info -->
+      <div class="item-info">
+        <div class="delivery"><i class="pixel"></i><i class="fa fa-truck"></i> <span>Frete Gratis</span></div>
+        <p class="name">{{name}}</p>
+        {{#oldPrice}}
+          <p class="oldPrice"><span>{{oldPrice}}</span></p>
+        {{/oldPrice}}
+        {{^oldPrice}}
+        <p class="oldPrice"> &nbsp; </p>
+        {{/oldPrice}}
+        <p class="price">{{price}}</p>
+        <p class="payment">Talvez lhe interesse &nbsp;<i class="fa fa-arrow-right"></i></p>
+        <a class="pure-button" href="{{detailUrl}}"><i class="fa fa-shopping-cart fa-lg"></i> Comprar</a>
+      </div>
+
+    </div>
+  {{/reference.item}}
+</script>
+
+<!-- Receommended Template -->
+<script id="onsite-recommend" type="x-tmpl-mustache">
+  {{#recommendation}}
+    <div class="chaordic-item">
+
+      <!-- Item Image -->
+      <div class="item-image">
+        <a href="{{detailUrl}}"><img src="{{imageName}}" alt="{{name}}" /></a>
+      </div>
+
+      <!-- Item Discount -->
+      {{#discount}}
+        <span class="discount"><i class="pixel"></i>{{discount}}</span>
+      {{/discount}}
+
+      <!-- Item Info -->
+      <div class="item-info">
+        <div class="delivery"><i class="pixel"></i><i class="fa fa-truck"></i> <span>Frete Gratis</span></div>
+        <p class="name">{{name}}</p>
+        {{#oldPrice}}
+          <p class="oldPrice"><span>{{oldPrice}}</span></p>
+        {{/oldPrice}}
+        {{^oldPrice}}
+        <p class="oldPrice"> &nbsp; </p>
+        {{/oldPrice}}
+        <p class="price">{{price}}</p>
+        <p class="payment">{{{productInfo.paymentConditions}}} &nbsp;<i class="fa fa-credit-card"></i></p>
+        <a class="pure-button" href="{{detailUrl}}"><i class="fa fa-shopping-cart fa-lg"></i> Comprar</a>
+      </div>
+
+    </div>
+  {{/recommendation}}
+</script>

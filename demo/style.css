@@ -80,22 +80,6 @@ label {
   color: rgba(42, 44, 53, 0.5);
 }
 
-/*
- * -- PURE BUTTON STYLES --
- */
-
-.pure-button {
-    background-color: #AA1423;
-    color: white;
-    padding: 0.5em 2em;
-    border-radius: 5px;
-}
-
-.splash .pure-button-primary {
-    background-color: white;
-    color: #2A2C35;
-    margin: .5em .25em;
-}
 
 /*
  * -- MENU STYLES --
@@ -113,7 +97,7 @@ label {
 
 .pure-menu.pure-menu-fixed {
     border-bottom: none;
-    z-index: 4;
+    z-index: 100;
 }
 
 .home-menu .pure-menu-heading {
@@ -192,6 +176,12 @@ label {
     text-decoration: none;
     opacity: 1;
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.splash .pure-button-primary {
+    background-color: white;
+    color: #2A2C35;
+    margin: .5em .25em;
 }
 
 /*
