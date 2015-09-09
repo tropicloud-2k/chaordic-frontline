@@ -1,23 +1,22 @@
-
 <!-- Container Template -->
 <script id="onsite-container" type="x-tmpl-mustache">
   <div class="chaordic-onsite pure-g">
-    <div class="pure-u-1 pure-u-sm-1-3 pure-u-md-1-4 pure-u-lg-1-5"><span class="label"><i class="pixel"></i>Você já visitou &nbsp; <i class="fa fa-check"></i></span></div>
-    <div class="pure-u-1 pure-u-1 pure-u-sm-2-3 pure-u-md-3-4 pure-u-lg-4-5"><span class="label"><i class="pixel"></i>Talvez lhe interesse &nbsp; <i class="fa fa-arrow-right"></i></span></div>
+    <div class="chaordic-ref-label pure-u-1 pure-u-sm-1-3 pure-u-md-1-4 pure-u-lg-1-5"><span class="label"><i class="pixel"></i>Você já visitou &nbsp; <i class="fa fa-check"></i></span></div>
+    <div class="chaordic-rec-label pure-u-1 pure-u-1 pure-u-sm-2-3 pure-u-md-3-4 pure-u-lg-4-5"><span class="label"><i class="pixel"></i>Talvez lhe interesse &nbsp; <i class="fa fa-arrow-right"></i></span></div>
     <div class="chaordic-ref pure-u-1 pure-u-sm-1-3 pure-u-md-1-4 pure-u-lg-1-5"></div>
     <div class="chaordic-rec pure-u-1 pure-u-sm-2-3 pure-u-md-3-4 pure-u-lg-4-5"></div>
   </div>
 
   <!-- Widget Options -->
-  <link rel="stylesheet" href="//cdn.rawgit.com/tropicloud/chaordic-frontline/master/0.4.9/templates/saraiva.css" charset="utf-8">
+  <link rel="stylesheet" href="//cdn.rawgit.com/tropicloud/chaordic-frontline/master/0.5.1/templates/saraiva.css">
   <script id="chaordic-options" type="text/javascript">
     var onsiteOpt = {
       truncation: {
-        width: "auto",
+        width: 140,
         multiline: false
       },
       carousel: {
-        speed: 800,
+        speed: 900,
         dots: true,
         arrows: false,
         infinite: true,
@@ -59,12 +58,12 @@
         {{/oldPrice}}
         <p class="price">{{price}}</p>
         {{#productInfo.paymentConditions}}
-          <p class="payment">{{{productInfo.paymentConditions}}} &nbsp;<i class="fa fa-credit-card"></i></p>
+          <p class="payment">{{{productInfo.paymentConditions}}} <i class="fa fa-credit-card"></i></p>
         {{/productInfo.paymentConditions}}
         {{^productInfo.paymentConditions}}
         <p class="payment">{{{productInfo.paymentConditions}}} &nbsp; </p>
         {{/productInfo.paymentConditions}}
-        <a class="pure-button" href="{{detailUrl}}"><i class="fa fa-shopping-cart fa-lg"></i> Adicionar</a>
+        <a class="pure-button" href="{{detailUrl}}">Adicionar <i class="fa fa-shopping-cart fa-lg"></i></a>
       </div>
 
     </div>
@@ -74,7 +73,7 @@
 <!-- Receommended Template -->
 <script id="onsite-recommend" type="x-tmpl-mustache">
   {{#recommendation}}
-    <div class="chaordic-item">
+  <div class="chaordic-item">
 
       <!-- Item Image -->
       <div class="item-image">
@@ -97,12 +96,12 @@
         {{/oldPrice}}
         <p class="price">{{price}}</p>
         {{#productInfo.paymentConditions}}
-          <p class="payment">{{{productInfo.paymentConditions}}} &nbsp;<i class="fa fa-credit-card"></i></p>
+          <p class="payment">{{{productInfo.paymentConditions}}} <i class="fa fa-credit-card"></i></p>
         {{/productInfo.paymentConditions}}
         {{^productInfo.paymentConditions}}
         <p class="payment">{{{productInfo.paymentConditions}}} &nbsp; </p>
         {{/productInfo.paymentConditions}}
-        <a class="pure-button" href="{{detailUrl}}"><i class="fa fa-shopping-cart fa-lg"></i> Adicionar</a>
+        <a class="pure-button" href="{{detailUrl}}">Adicionar <i class="fa fa-shopping-cart fa-lg"></i></a>
       </div>
 
     </div>

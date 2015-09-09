@@ -2,14 +2,12 @@
 // Author: Guilherme Jaccoud <admin@tropicloud.net>
 // Author URI: http://tapioca.ws
 // Description: Chaordic Frontline
-// Version: 0.4.9
+// Version: 0.5.1
 
-var css = '<link rel="stylesheet" href="//cdn.rawgit.com/tropicloud/chaordic-frontline/master/0.4.9/frontline.css">';
 var js1 = $.getScript('//cdn.jsdelivr.net/jquery.slick/1.5.8/slick.min.js');
 var js2 = $.getScript('//cdn.jsdelivr.net/mustache.js/2.1.3/mustache.min.js');
 var js3 = $.getScript('//cdn.jsdelivr.net/jquery.truncate/0.1/jquery.truncate.min.js');
 
-$('head').append(css);
 $.when( js1, js2, js3 )
  .then(function () {
    $('.chaordic-container').each(function () {
@@ -36,6 +34,7 @@ $.when( js1, js2, js3 )
       var containerRender = Mustache.render(containerTemplate, response[0].data);
       var referenceRender = Mustache.render(referenceTemplate, response[0].data);
       var recommendRender = Mustache.render(recommendTemplate, response[0].data);
+
       $(id).html(containerRender);
       $(id).find('.chaordic-ref').html(referenceRender).slick();
       $(id).find('.chaordic-rec').html(recommendRender).slick(onsiteOpt.carousel);

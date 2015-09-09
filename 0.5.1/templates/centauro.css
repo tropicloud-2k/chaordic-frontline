@@ -5,7 +5,7 @@
 
 #centauro .price { color: #C0262C; }
 #centauro .pure-button { background-color: #C0262C; }
-#centauro .delivery { color: #C0C6CF; border: 1px solid #DFE2E7; padding: .25em; }
+#centauro .delivery { border: 1px solid #ECEEF0; padding: .25em; opacity: .7; }
 #centauro .delivery span { font-size: .9em; font-style: italic; }
 #centauro .chaordic-ref .payment { color: #009144; font-style: italic; }
 
@@ -22,7 +22,7 @@
 }
 
 #centauro .discount {
-  margin-top: -8em;
+  margin-top: -6em;
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHdpZHRoPSIzMDBweCIgaGVpZ2h0PSIzMHB4IiB2aWV3Qm94PSIwIDAgMzAwIDMwIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAzMDAgMzAiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxwb2x5Z29uIG9wYWNpdHk9IjAuOSIgZmlsbD0iIzAwOTI0NSIgcG9pbnRzPSIzMDAsMzAgMCwzMCA1LDI1IDAsMjAgNSwxNSAwLDEwIDUsNSAwLDAgMzAwLDAgIi8+PC9zdmc+');
 }
 

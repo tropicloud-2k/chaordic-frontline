@@ -1,24 +1,26 @@
 <!-- Container Template -->
 <script id="onsite-container" type="x-tmpl-mustache">
   <div class="chaordic-onsite pure-g">
-    <div class="pure-u-1 pure-u-sm-1-3 pure-u-md-1-4 pure-u-lg-1-5"><span class="label"><i class="pixel"></i>Você já visitou &nbsp; <i class="fa fa-check"></i></span></div>
-    <div class="pure-u-1 pure-u-1 pure-u-sm-2-3 pure-u-md-3-4 pure-u-lg-4-5"></div>
+    <div class="chaordic-ref-label pure-u-1 pure-u-sm-1-3 pure-u-md-1-4 pure-u-lg-1-5"><span class="label"><i class="pixel"></i>Você já visitou &nbsp; <i class="fa fa-check"></i></span></div>
+    <div class="chaordic-rec-label pure-u-1 pure-u-1 pure-u-sm-2-3 pure-u-md-3-4 pure-u-lg-4-5"></div>
     <div class="chaordic-ref pure-u-1 pure-u-sm-1-3 pure-u-md-1-4 pure-u-lg-1-5"></div>
     <div class="chaordic-rec pure-u-1 pure-u-sm-2-3 pure-u-md-3-4 pure-u-lg-4-5"></div>
   </div>
 
   <!-- Widget Options -->
-  <link rel="stylesheet" href="//cdn.rawgit.com/tropicloud/chaordic-frontline/master/0.4.9/templates/centauro.css" charset="utf-8">
+  <link rel="stylesheet" href="//cdn.rawgit.com/tropicloud/chaordic-frontline/master/0.5.1/templates/centauro.css">
   <script id="chaordic-options" type="text/javascript">
     var onsiteOpt = {
       truncation: {
-        width: "auto",
-        multiline: true
+        width: 300,
+        multiline: false
       },
       carousel: {
-        speed: 400,
+        speed: 300,
         dots: true,
         arrows: false,
+        autoplay: true,
+        autoplaySpeed: 2600,
         infinite: true,
         slidesToShow: 4,
         slidesToScroll: 4,
@@ -58,8 +60,8 @@
         <p class="oldPrice"> &nbsp; </p>
         {{/oldPrice}}
         <p class="price">{{price}}</p>
-        <p class="payment">Talvez lhe interesse &nbsp;<i class="fa fa-arrow-right"></i></p>
-        <a class="pure-button" href="{{detailUrl}}"><i class="fa fa-shopping-cart fa-lg"></i> Comprar</a>
+        <p class="payment">Veja tamb&eacute;m <i class="fa fa-arrow-right"></i></p>
+        <a class="pure-button" href="{{detailUrl}}">Adicionar <i class="fa fa-shopping-cart fa-lg"></i></a>
       </div>
 
     </div>
@@ -92,8 +94,8 @@
         <p class="oldPrice"> &nbsp; </p>
         {{/oldPrice}}
         <p class="price">{{price}}</p>
-        <p class="payment">{{{productInfo.paymentConditions}}} &nbsp;<i class="fa fa-credit-card"></i></p>
-        <a class="pure-button" href="{{detailUrl}}"><i class="fa fa-shopping-cart fa-lg"></i> Comprar</a>
+        <p class="payment">{{{productInfo.paymentConditions}}} <i class="fa fa-credit-card"></i></p>
+        <a class="pure-button" href="{{detailUrl}}">Adicionar <i class="fa fa-shopping-cart fa-lg"></i></a>
       </div>
 
     </div>

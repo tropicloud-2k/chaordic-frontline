@@ -4,23 +4,24 @@
  */
 
 #saraiva .price { color: #FDD900; }
-#saraiva .pure-button { color: #0F1113; background-color: #FDD900; }
 #saraiva .chaordic-item img { padding: 0; }
 #saraiva .item-img span { display: block; padding-top: 100%; }
 #saraiva .chaordic-item:hover img { margin: -.3em 0 .3em 0; }
 #saraiva .item-img:hover { background-position: 0 -4em !important; }
-#saraiva .chaordic-item:hover,
-#saraiva .chaordic-ref .chaordic-item {
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-}
+#saraiva .pure-button { color: #0F1113; background-color: #FDD900; }
 
 #saraiva .item-img {
   display: block;
   width: 100%;
   background-size: 100% !important;
-  -webkit-transition: background-position .7s;
-  -moz-transition: background-position .7s;
-  transition: background-position .7s;
+  -webkit-transition: background-position .7s ease;
+  -moz-transition: background-position .7s ease;
+  transition: background-position .7s ease;
+}
+
+#saraiva .chaordic-item:hover,
+#saraiva .chaordic-ref .chaordic-item {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 
 /*
