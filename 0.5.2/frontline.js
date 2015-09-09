@@ -8,7 +8,7 @@ var js1 = $.getScript('//cdn.jsdelivr.net/jquery.slick/1.5.8/slick.min.js');
 var js2 = $.getScript('//cdn.jsdelivr.net/mustache.js/2.1.3/mustache.min.js');
 var js3 = $.getScript('//cdn.jsdelivr.net/jquery.truncate/0.1/jquery.truncate.min.js');
 
-$.when( js1, js2, js3 )
+$.when(js1,js2,js3)
  .then(function () {
    $('.chaordic-container').each(function () {
     var id = '#' + $(this).attr('id');

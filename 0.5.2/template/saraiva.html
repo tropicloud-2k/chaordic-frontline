@@ -8,15 +8,15 @@
   </div>
 
   <!-- Widget Options -->
-  <link rel="stylesheet" href="//cdn.rawgit.com/tropicloud/chaordic-frontline/master/0.5.1/templates/default.css">
+  <link rel="stylesheet" href="//cdn.rawgit.com/tropicloud/chaordic-frontline/master/0.5.2/templates/saraiva.css">
   <script id="chaordic-options" type="text/javascript">
     var onsiteOpt = {
       truncation: {
-        width: 320,
+        width: 140,
         multiline: false
       },
       carousel: {
-        speed: 600,
+        speed: 900,
         dots: true,
         arrows: false,
         infinite: true,
@@ -39,7 +39,7 @@
 
       <!-- Item Image -->
       <div class="item-image">
-        <a href="{{detailUrl}}"><img src="{{imageName}}" alt="{{name}}" /></a>
+        <a href="{{detailUrl}}" class="item-img" style="background: url( {{imageName}} );"><span></span></a>
       </div>
 
       <!-- Item Discount -->
@@ -57,7 +57,12 @@
         <p class="oldPrice"> &nbsp; </p>
         {{/oldPrice}}
         <p class="price">{{price}}</p>
-        <p class="payment">{{{productInfo.paymentConditions}}} <i class="fa fa-credit-card"></i></p>
+        {{#productInfo.paymentConditions}}
+          <p class="payment">{{{productInfo.paymentConditions}}} <i class="fa fa-credit-card"></i></p>
+        {{/productInfo.paymentConditions}}
+        {{^productInfo.paymentConditions}}
+        <p class="payment">{{{productInfo.paymentConditions}}} &nbsp; </p>
+        {{/productInfo.paymentConditions}}
         <a class="pure-button" href="{{detailUrl}}">Adicionar <i class="fa fa-shopping-cart fa-lg"></i></a>
       </div>
 
@@ -68,11 +73,11 @@
 <!-- Receommended Template -->
 <script id="onsite-recommend" type="x-tmpl-mustache">
   {{#recommendation}}
-    <div class="chaordic-item">
+  <div class="chaordic-item">
 
       <!-- Item Image -->
       <div class="item-image">
-        <a href="{{detailUrl}}"><img src="{{imageName}}" alt="{{name}}" /></a>
+        <a href="{{detailUrl}}" class="item-img" style="background: url( {{imageName}} );"><span></span></a>
       </div>
 
       <!-- Item Discount -->
@@ -90,7 +95,12 @@
         <p class="oldPrice"> &nbsp; </p>
         {{/oldPrice}}
         <p class="price">{{price}}</p>
-        <p class="payment">{{{productInfo.paymentConditions}}} <i class="fa fa-credit-card"></i></p>
+        {{#productInfo.paymentConditions}}
+          <p class="payment">{{{productInfo.paymentConditions}}} <i class="fa fa-credit-card"></i></p>
+        {{/productInfo.paymentConditions}}
+        {{^productInfo.paymentConditions}}
+        <p class="payment">{{{productInfo.paymentConditions}}} &nbsp; </p>
+        {{/productInfo.paymentConditions}}
         <a class="pure-button" href="{{detailUrl}}">Adicionar <i class="fa fa-shopping-cart fa-lg"></i></a>
       </div>
 
