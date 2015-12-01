@@ -2,10 +2,10 @@
 // Author: Guilherme Jaccoud <admin@tropicloud.net>
 // Author URI: http://tapioca.ws
 // Description: Chaordic Frontline
-// Version: 0.5.1
+// Version: 0.5.5
 
-var js1 = $.getScript('//cdn.jsdelivr.net/jquery.slick/1.5.8/slick.min.js');
-var js2 = $.getScript('//cdn.jsdelivr.net/mustache.js/2.1.3/mustache.min.js');
+var js1 = $.getScript('//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js');
+var js2 = $.getScript('//cdn.jsdelivr.net/mustache.js/2.2.0/mustache.min.js');
 var js3 = $.getScript('//cdn.jsdelivr.net/jquery.truncate/0.1/jquery.truncate.min.js');
 
 $.when(js1,js2,js3)
