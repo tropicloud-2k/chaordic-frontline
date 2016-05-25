@@ -2,7 +2,7 @@
 // Author: Guilherme Jaccoud <guigo@tapioca.ws>
 // Author URI: https://tapioca.ws
 // Description: Chaordic Frontline
-// Version: 0.6.0
+// Version: 0.6.1
 
 var js1 = $.getScript('//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js');
 var js2 = $.getScript('//cdn.jsdelivr.net/mustache.js/2.2.1/mustache.min.js');
@@ -54,4 +54,4 @@ function onsiteDiscount(item) {
   }
 }
 
-window.addEventListener('load', frontline);
+window.addEventListener('load', frontline());
